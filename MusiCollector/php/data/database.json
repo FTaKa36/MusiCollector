@@ -1,0 +1,75 @@
+{
+  "albums": [
+    {
+      "id": "alb-1",
+      "title": "Streets of Gold",
+      "artist": "Kairo",
+      "genre": "rap",
+      "tracksCount": 14,
+      "releaseYear": "2026",
+      "cover": "../assets/images/rap.jpg",
+      "views": "2.4M",
+      "featured": true,
+      "tracks": [
+        { "title": "Streets of Gold (ft. Neon City)", "duration": "3:45", "views": "2.4M" },
+        { "title": "Gold Standard Cipher", "duration": "3:12", "views": "950K" },
+        { "title": "Underground Royalty", "duration": "4:01", "views": "620K" }
+      ]
+    },
+    {
+      "id": "alb-2",
+      "title": "Synthetic Dreams",
+      "artist": "The Midnight Echoes",
+      "genre": "synthwave",
+      "tracksCount": 12,
+      "releaseYear": "2026",
+      "cover": "../assets/images/hero.jpg",
+      "views": "1.8M",
+      "featured": true,
+      "tracks": [
+        { "title": "Neon Skyline (Midnight Edit)", "duration": "4:15", "views": "1.8M" },
+        { "title": "Digital Memory", "duration": "3:50", "views": "780K" },
+        { "title": "Cyber Sunset", "duration": "4:30", "views": "540K" }
+      ]
+    },
+    {
+      "id": "alb-3",
+      "title": "Soft Geometry",
+      "artist": "Luna Bay",
+      "genre": "indie",
+      "tracksCount": 10,
+      "releaseYear": "2025",
+      "cover": "../assets/images/indie.jpg",
+      "views": "1.2M",
+      "featured": false,
+      "tracks": [
+        { "title": "Soft Geometry", "duration": "3:22", "views": "1.2M" },
+        { "title": "Velvet Horizon", "duration": "3:58", "views": "820K" },
+        { "title": "Prism", "duration": "2:45", "views": "410K" }
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "ann-1",
+      "track": "Streets of Gold",
+      "lyric": "golden avenues",
+      "text": "Kairo references his origins in the city underground before breaking through to worldwide music charts. The yellow gold metaphor symbolizes both street lamps and royalty.",
+      "author": "GeniusStaff",
+      "votes": 142
+    },
+    {
+      "id": "ann-2",
+      "track": "Neon Skyline",
+      "lyric": "digital horizons fade to yellow",
+      "text": "Refers to the nostalgic glowing screens of retro-futurism. Synthesizer frequencies were modeled after 1980s analog hardware.",
+      "author": "SynthHead99",
+      "votes": 89
+    }
+  ],
+  "contributors": [
+    { "name": "LyricMaster2026", "iq": 14500, "badge": "TOP ANNOTATOR" },
+    { "name": "BeatCollector", "iq": 11200, "badge": "VERIFIED ARCHIVIST" },
+    { "name": "RetroVibes", "iq": 8900, "badge": "GENRE LEADER" }
+  ]
+}

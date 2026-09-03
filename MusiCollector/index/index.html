@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusiCollector — Genius Music & Collection Manager (Full Release)</title>
+    <meta name="description" content="Manage your ultimate music collection, explore top charts, lyrics, and Genius verified annotations.">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../js/app.js" defer></script>
+</head>
+
+<body>
+    <!-- Toast Notification Container -->
+    <div id="toastNotification" class="toast-notification">Notification</div>
+
+    <!-- Genius Style Navigation Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="brand-logo">
+                MUSI<span class="yellow-text">COLLECTOR</span>
+            </a>
+
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Search songs, lyrics, artists, albums..." aria-label="Search music collection">
+            </div>
+
+            <ul class="leftBar">
+                <li><a href="#charts">Charts</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#" id="openAddAlbumBtn">+ Add Album</a></li>
+            </ul>
+
+            <ul class="rightBar">
+                <li><a href="#" id="loginLink">Sign In</a></li>
+                <li><a href="#signup" class="btn-yellow">Join Genius</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-wrapper">
+        <!-- Hero Section: Featured Genius Collection -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge">🔥 Featured Release of the Week</span>
+                <h1>SYNTHETIC DREAMS</h1>
+                <p>By <strong>The Midnight Echoes</strong> • 12 Tracks • 2026 Retro Synthwave Odyssey. Full track annotations & verified collector reviews live now.</p>
+                <div class="hero-actions">
+                    <a href="#collection" class="btn-yellow">Explore Album</a>
+                    <a href="#annotations" class="btn-outline">Read Verified Lyrics</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <img src="../assets/images/hero.jpg" alt="Synthetic Dreams - Featured Album Cover">
+            </div>
+        </section>
+
+        <!-- 2-Column Section: Top 5 Charts & Genius Annotation Spotlight -->
+        <div class="content-grid">
+            <!-- Left Column: Genius Top Charts -->
+            <section id="charts">
+                <div class="section-header">
+                    <h2><span>CHARTS</span> — TOP TRENDING SONGS</h2>
+                </div>
+                <div class="charts-list">
+                    <div class="chart-card">
+                        <div class="chart-rank">01</div>
+                        <img src="../assets/images/rap.jpg" alt="Streets of Gold" class="chart-img">
+                        <div class="chart-info">
+                            <h3>Streets of Gold</h3>
+                            <p>Kairo ft. Neon City</p>
+                        </div>
+                        <div class="chart-stats">
+                            <span>🔥 2.4M</span>
+                            <button class="play-btn-circle" title="Play Track">▶</button>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <div class="chart-rank">02</div>
+                        <img src="../assets/images/hero.jpg" alt="Synthetic Dreams" class="chart-img">
+                        <div class="chart-info">
+                            <h3>Neon Skyline (Midnight Edit)</h3>
+                            <p>The Midnight Echoes</p>
+                        </div>
+                        <div class="chart-stats">
+                            <span>🔥 1.8M</span>
+                            <button class="play-btn-circle" title="Play Track">▶</button>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <div class="chart-rank">03</div>
+                        <img src="../assets/images/indie.jpg" alt="Soft Geometry" class="chart-img">
+                        <div class="chart-info">
+                            <h3>Soft Geometry</h3>
+                            <p>Luna Bay</p>
+                        </div>
+                        <div class="chart-stats">
+                            <span>🔥 1.2M</span>
+                            <button class="play-btn-circle" title="Play Track">▶</button>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <div class="chart-rank">04</div>
+                        <img src="../assets/images/rap.jpg" alt="City Lights" class="chart-img">
+                        <div class="chart-info">
+                            <h3>Gold Standard Cipher</h3>
+                            <p>Kairo</p>
+                        </div>
+                        <div class="chart-stats">
+                            <span>🔥 950K</span>
+                            <button class="play-btn-circle" title="Play Track">▶</button>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <div class="chart-rank">05</div>
+                        <img src="../assets/images/indie.jpg" alt="Velvet Horizon" class="chart-img">
+                        <div class="chart-info">
+                            <h3>Velvet Horizon</h3>
+                            <p>Luna Bay & Solstice</p>
+                        </div>
+                        <div class="chart-stats">
+                            <span>🔥 820K</span>
+                            <button class="play-btn-circle" title="Play Track">▶</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Column: Genius Lyric Annotation Spotlight -->
+            <aside id="annotations">
+                <div class="section-header">
+                    <h2><span>LYRIC</span> SPOTLIGHT</h2>
+                </div>
+                <div class="annotation-spotlight">
+                    <h3>Track: "Streets of Gold"</h3>
+                    <div class="lyric-box">
+                        <p>"We turned the asphalt into <mark class="genius-highlight" data-annotation="Kairo references his origins in the city underground before breaking through to worldwide music charts. The yellow gold metaphor symbolizes both street lamps and royalty.">golden avenues</mark>, step by step under the neon lights."</p>
+                    </div>
+                    <div class="annotation-detail">
+                        <p><em>Click highlighted text to inspect lyrics, community notes, and earn Genius IQ points.</em></p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Music Collection Cards Section -->
+        <section id="collection" class="collection-section">
+            <div class="section-header">
+                <h2><span>MY MUSIC</span> COLLECTION</h2>
+            </div>
+
+            <!-- Genre Filter Tabs -->
+            <div class="genre-filter">
+                <button class="filter-chip active" data-genre="all">All Genres</button>
+                <button class="filter-chip" data-genre="rap">Rap / Hip-Hop</button>
+                <button class="filter-chip" data-genre="indie">Indie Pop</button>
+                <button class="filter-chip" data-genre="synthwave">Synthwave</button>
+            </div>
+
+            <div class="albums-grid">
+                <!-- Album Card 1 -->
+                <div class="album-card" data-genre="rap">
+                    <img src="../assets/images/rap.jpg" alt="Streets of Gold Album" class="album-card-img">
+                    <div class="album-card-body">
+                        <h4>Streets of Gold</h4>
+                        <p>Kairo</p>
+                        <div class="album-card-footer">
+                            <span class="genre-tag">Rap / Hip-Hop</span>
+                            <button class="play-btn-circle" title="Play">▶</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Album Card 2 -->
+                <div class="album-card" data-genre="synthwave">
+                    <img src="../assets/images/hero.jpg" alt="Synthetic Dreams Album" class="album-card-img">
+                    <div class="album-card-body">
+                        <h4>Synthetic Dreams</h4>
+                        <p>The Midnight Echoes</p>
+                        <div class="album-card-footer">
+                            <span class="genre-tag">Synthwave</span>
+                            <button class="play-btn-circle" title="Play">▶</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Album Card 3 -->
+                <div class="album-card" data-genre="indie">
+                    <img src="../assets/images/indie.jpg" alt="Soft Geometry Album" class="album-card-img">
+                    <div class="album-card-body">
+                        <h4>Soft Geometry</h4>
+                        <p>Luna Bay</p>
+                        <div class="album-card-footer">
+                            <span class="genre-tag">Indie Pop</span>
+                            <button class="play-btn-circle" title="Play">▶</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genius Community & Contributor Leaderboard Section -->
+        <section id="community" class="community-section">
+            <div class="section-header">
+                <h2><span>GENIUS</span> COMMUNITY LEADERBOARD</h2>
+            </div>
+            <p style="color: var(--genius-text-muted);">Top music archivists and lyric annotators this month.</p>
+
+            <div class="contributors-grid">
+                <div class="contributor-card">
+                    <div>
+                        <div class="contributor-name">🥇 LyricMaster2026</div>
+                        <small style="color: var(--genius-text-muted);">342 Annotations</small>
+                    </div>
+                    <span class="iq-badge">14.5K IQ</span>
+                </div>
+                <div class="contributor-card">
+                    <div>
+                        <div class="contributor-name">🥈 BeatCollector</div>
+                        <small style="color: var(--genius-text-muted);">218 Annotations</small>
+                    </div>
+                    <span class="iq-badge">11.2K IQ</span>
+                </div>
+                <div class="contributor-card">
+                    <div>
+                        <div class="contributor-name">🥉 RetroVibes</div>
+                        <small style="color: var(--genius-text-muted);">180 Annotations</small>
+                    </div>
+                    <span class="iq-badge">8.9K IQ</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sticky Genius Audio Player Bar -->
+    <div class="player-bar">
+        <div class="player-track">
+            <img id="playerCover" src="../assets/images/rap.jpg" alt="Now Playing Album Cover">
+            <div class="player-track-info">
+                <h4 id="playerTrackTitle">Streets of Gold (ft. Neon City)</h4>
+                <p id="playerArtist">Kairo</p>
+            </div>
+        </div>
+
+        <div class="player-controls">
+            <div class="player-buttons">
+                <button class="player-btn" title="Previous Track">⏮</button>
+                <button id="playMainBtn" class="play-main-btn" title="Play / Pause">▶</button>
+                <button class="player-btn" title="Next Track">⏭</button>
+            </div>
+            <div class="progress-bar-container">
+                <span>1:24</span>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <span>3:45</span>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <span style="color: var(--genius-yellow); font-size: 0.8rem; font-weight: bold;">🔊 HQ AUDIO</span>
+        </div>
+    </div>
+
+    <!-- Modal 1: Add Album Modal -->
+    <div id="addAlbumModal" class="modal-overlay" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h3 style="color: var(--genius-yellow); font-family: var(--font-heading); margin-bottom: 1.2rem;">+ ADD ALBUM TO COLLECTION</h3>
+            <form id="addAlbumForm">
+                <div class="form-group">
+                    <label for="albumTitleInput">Album Title</label>
+                    <input type="text" id="albumTitleInput" class="form-control" placeholder="e.g. Midnight Memories" required>
+                </div>
+                <div class="form-group">
+                    <label for="albumArtistInput">Artist Name</label>
+                    <input type="text" id="albumArtistInput" class="form-control" placeholder="e.g. Kairo" required>
+                </div>
+                <div class="form-group">
+                    <label for="albumGenreInput">Genre</label>
+                    <select id="albumGenreInput" class="form-control" required>
+                        <option value="rap">Rap / Hip-Hop</option>
+                        <option value="synthwave">Synthwave</option>
+                        <option value="indie">Indie Pop</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="albumCoverInput">Cover Image URL (Optional)</label>
+                    <input type="text" id="albumCoverInput" class="form-control" placeholder="../assets/images/hero.jpg">
+                </div>
+                <button type="submit" class="btn-yellow" style="width: 100%; margin-top: 1rem;">SAVE TO COLLECTION (+50 IQ)</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal 2: Auth Modal -->
+    <div id="authModal" class="modal-overlay" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h3 style="color: var(--genius-yellow); font-family: var(--font-heading); margin-bottom: 1.2rem;">GENIUS CONTRIBUTOR SIGN IN</h3>
+            <form id="authForm">
+                <div class="form-group">
+                    <label for="usernameInput">Username</label>
+                    <input type="text" id="usernameInput" class="form-control" placeholder="Your Genius Handle" required>
+                </div>
+                <div class="form-group">
+                    <label for="passwordInput">Password</label>
+                    <input type="password" id="passwordInput" class="form-control" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-yellow" style="width: 100%; margin-top: 1rem;">SIGN IN TO MUSICIANS</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal 3: Lyric Annotation Modal -->
+    <div id="annotationModal" class="modal-overlay" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h3 id="modalTitle" style="color: var(--genius-yellow); font-family: var(--font-heading); margin-bottom: 0.8rem;"></h3>
+            <p id="modalText" style="color: #E0E0E0; font-size: 0.95rem; line-height: 1.6;"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 <strong>MusiCollector</strong> — Full System Release. Inspired by Genius Music Culture.</p>
+    </footer>
+</body>
+
+</html>
